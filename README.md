@@ -40,7 +40,7 @@
 После запуска приложения можно открыть Swagger UI для просмотра
 и выполнения запросов:
 
-[localhost:8080/swagger-ui](localhost:8080/swagger-ui)
+[localhost:8080/swagger-ui](http://localhost:8080/swagger-ui)
 
 Для запросов, требующих авторизации, необходимо нажать на кнопку 
 `Authorize`, а затем в поле `Value:` ввести значение
@@ -54,7 +54,7 @@
 
 Консоль для in-memory базы данных доступна по адресу:
 
-[http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+[localhost:8080/h2-console](http://localhost:8080/h2-console)
 
 Данные для входа:
 * JDBC URL - `jdbc:h2:mem:h2-db`
