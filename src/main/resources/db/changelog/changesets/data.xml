@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <changeSet id="clear-tables" author="mkohan">
+        <delete tableName="book"/>
+        <delete tableName="author"/>
+    </changeSet>
+
+    <changeSet id="insert-sample-data" author="mkohan">
+        <insert tableName="author">
+            <column name="id" value="1"/>
+            <column name="name">First Author</column>
+        </insert>
+
+        <insert tableName="book">
+            <column name="id" value="1"/>
+            <column name="title">Book One</column>
+            <column name="author_id" value="1"/>
+        </insert>
+
+        <insert tableName="book">
+            <column name="id" value="2"/>
+            <column name="title" value="One More Book"/>
+            <column name="author_id" value="1"/>
+        </insert>
+
+        <insert tableName="author">
+            <column name="id" value="2"/>
+            <column name="name">Second Author</column>
+        </insert>
+
+        <insert tableName="book">
+            <column name="id" value="3"/>
+            <column name="title" value="Book by Second Author"/>
+            <column name="author_id" value="2"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
