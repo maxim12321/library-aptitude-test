@@ -40,7 +40,7 @@
 После запуска приложения можно открыть Swagger UI для просмотра
 и выполнения запросов:
 
-[localhost:8080/swagger-ui](http://localhost:8080/swagger-ui)
+[localhost:8080/swagger-ui/#](http://localhost:8080/swagger-ui/#)
 
 Для запросов, требующих авторизации, необходимо нажать на кнопку 
 `Authorize`, а затем в поле `Value:` ввести значение
